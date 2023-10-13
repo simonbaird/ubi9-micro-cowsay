@@ -1,0 +1,24 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: cowsay
+  annotations:
+    tekton.dev/displayName: Cowsay
+    tekton.dev/pipelines.minVersion: "0.19"
+    tekton.dev/tags: cowsay
+  labels:
+    app.kubernetes.io/version: "0.1"
+spec:
+  description: A cow will say your message
+  params:
+  - name: MESSAGE
+    type: string
+    default: Hello
+    description: >-
+      Text for the cow to say.
+  steps:
+  - image: quay.io/sbaird/ubi9-micro-cowsay:latest
+    command: [cowsay]
+    args:
+    - $(params.MESSAGE)
