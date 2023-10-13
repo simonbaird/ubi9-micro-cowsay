@@ -17,8 +17,16 @@ spec:
     default: Hello
     description: >-
       Text for the cow to say.
+  - name: TYPE
+    type: string
+    default: default
+    description: >-
+      See https://github.com/Code-Hex/Neo-cowsay/tree/master/cows
+      for a list of cow types.
   steps:
   - image: quay.io/sbaird/ubi9-micro-cowsay:latest
     command: [cowsay]
     args:
+    - -f
+    - $(params.TYPE)
     - $(params.MESSAGE)
