@@ -132,7 +132,7 @@ spec:
         - name: name
           value: init
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-init:0.2@sha256:3ca52e1d8885fc229bd9067275f44d5b21a9a609981d0324b525ddeca909bf10
+          value: quay.io/konflux-ci/tekton-catalog/task-init:0.2@sha256:b349d24cb896573695802d6913d311640b44675ec082b3ad167721946a6a0a71
         - name: kind
           value: task
         resolver: bundles
@@ -149,7 +149,7 @@ spec:
         - name: name
           value: git-clone
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-git-clone:0.1@sha256:90d2d42d17e6276ef45505cbb5a78598e5f5186257d0ee2260b3d4835f1c2d6b
+          value: quay.io/konflux-ci/tekton-catalog/task-git-clone:0.1@sha256:242fa43ae84f22e692c01662ceea1cee18143f66a11a424ae2228472dbfc53cc
         - name: kind
           value: task
         resolver: bundles
@@ -174,7 +174,7 @@ spec:
         - name: name
           value: prefetch-dependencies
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies:0.2@sha256:a18a33aa577ac1b8f0c9ca6cd74c4c73a30cfd48a7b959c86390bc04066d1fb1
+          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies:0.2@sha256:21c4278fb4d2dc5dd4fbdd0784469ea38fb43558844f4ed9a932b4bdb419d3a1
         - name: kind
           value: task
         resolver: bundles
@@ -219,7 +219,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.6@sha256:e8648dff9859d89a0dbaedd120eec2e07afbffc850e706d16d0ac479a905efa0
+          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.6@sha256:8dcb64b7cd78a3ab1b2cb0e991860ba519aac5a4682b2e7f9f8f91ded1101e29
         - name: kind
           value: task
         resolver: bundles
@@ -253,7 +253,7 @@ spec:
         - name: name
           value: build-image-index
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-build-image-index:0.1@sha256:d94cad7f41be61074dd21c7dff26dab9217c3435a16f62813c1cb8382dd9aae6
+          value: quay.io/konflux-ci/tekton-catalog/task-build-image-index:0.1@sha256:d455c28a6ae9f6ed40504e65e69b75ab147bb685c9fd606e6ffc3bad6f722bf4
         - name: kind
           value: task
         resolver: bundles
@@ -275,7 +275,7 @@ spec:
         - name: name
           value: source-build
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-source-build:0.3@sha256:268bf4dba7455ef3871d84bc26de1800b8221a0d1809c9f5101616bccfa84d33
+          value: quay.io/konflux-ci/tekton-catalog/task-source-build:0.3@sha256:9e567501dd67e30b1dd1d16f859c767323f762335bad7a1ad4107deca2e2c9a7
         - name: kind
           value: task
         resolver: bundles
@@ -304,7 +304,7 @@ spec:
         - name: name
           value: deprecated-image-check
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-deprecated-image-check:0.5@sha256:f59175d9a0a60411738228dfe568af4684af4aa5e7e05c832927cb917801d489
+          value: quay.io/konflux-ci/tekton-catalog/task-deprecated-image-check:0.5@sha256:462baed733dfc38aca5395499e92f19b6f13a74c2e88fe5d86c3cffa2f899b57
         - name: kind
           value: task
         resolver: bundles
@@ -326,7 +326,7 @@ spec:
         - name: name
           value: clair-scan
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-clair-scan:0.3@sha256:8ec7d7b9438ace5ef3fb03a533d9440d0fd81e51c73b0dc1eb51602fb7cd044e
+          value: quay.io/konflux-ci/tekton-catalog/task-clair-scan:0.3@sha256:ee558db6af779ab162163ec88f288a5c1b2d5f70c3361f3690a474866e3bdc74
         - name: kind
           value: task
         resolver: bundles
@@ -346,7 +346,7 @@ spec:
         - name: name
           value: ecosystem-cert-preflight-checks
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-ecosystem-cert-preflight-checks:0.2@sha256:9568c51a5158d534248908b9b561cf67d2826ed4ea164ffd95628bb42380e6ec
+          value: quay.io/konflux-ci/tekton-catalog/task-ecosystem-cert-preflight-checks:0.2@sha256:04f75593558f79a27da2336400bc63d460bf0c5669e3c13f40ee2fb650b1ad1e
         - name: kind
           value: task
         resolver: bundles
@@ -390,7 +390,7 @@ spec:
         - name: name
           value: sast-shell-check
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-sast-shell-check:0.1@sha256:91e9b91a328b9c227b87a25431b94e926c745a32c4f0dba711ea96d447216362
+          value: quay.io/konflux-ci/tekton-catalog/task-sast-shell-check:0.1@sha256:3fb1f8c3a344e67a22fdf4bff963ca806da84d62e9d33d34dc6beb49cfaacc33
         - name: kind
           value: task
         resolver: bundles
@@ -415,7 +415,7 @@ spec:
         - name: name
           value: sast-unicode-check
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-sast-unicode-check:0.3@sha256:4289586bc951ce7caba2f9aaa412969e4629fdaf7903ffc936226e6f20d80e8e
+          value: quay.io/konflux-ci/tekton-catalog/task-sast-unicode-check:0.3@sha256:74a5b3075c7e03b76d7d490947b507080bfb89c93a5f8bb7007d68d40672febd
         - name: kind
           value: task
         resolver: bundles
@@ -440,7 +440,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-apply-tags:0.2@sha256:f44be1bf0262471f2f503f5e19da5f0628dcaf968c86272a2ad6b4871e708448
+          value: quay.io/konflux-ci/tekton-catalog/task-apply-tags:0.2@sha256:e4017ec351a0891ef95989f35bd20b8c3f091fa1a3da364c4d4e975e99f3063c
         - name: kind
           value: task
         resolver: bundles
@@ -481,7 +481,7 @@ spec:
         - name: name
           value: rpms-signature-scan
         - name: bundle
-          value: quay.io/konflux-ci/konflux-vanguard/task-rpms-signature-scan:0.2@sha256:57d9107fe4708b503f494cf4362fef770623fdb300641811f23a975cd597b024
+          value: quay.io/konflux-ci/konflux-vanguard/task-rpms-signature-scan:0.2@sha256:7a7a2f0b6d0ffc590530289d3b8bad3b45c59ef338cb3c8d350038e7537f405f
         - name: kind
           value: task
         resolver: bundles
