@@ -5,3 +5,6 @@ RUN curl -sL https://github.com/Code-Hex/Neo-cowsay/releases/download/v${COW_VER
 
 FROM docker.io/redhat/ubi9-micro:latest@sha256:aff810919642215e15c993b9bbc110dbcc446608730ad24499dafd9df7a8f8f4
 COPY --from=builder cowsay cowthink /usr/bin
+
+ENTRYPOINT ["/usr/bin/cowsay"]
+CMD ["Kowflux?"]

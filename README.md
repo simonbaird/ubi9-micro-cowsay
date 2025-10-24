@@ -9,5 +9,5 @@ I'm planning to use this for Tekton experiments.
 ## Usage
 
 ```bash
-podman run --rm quay.io/sbaird/ubi9-micro-cowsay cowsay hello
+podman run --rm quay.io/sbaird/ubi9-micro-cowsay hello
 ```
