@@ -7,4 +7,4 @@ FROM docker.io/redhat/ubi9-micro:latest@sha256:aff810919642215e15c993b9bbc110dbc
 COPY --from=builder cowsay cowthink /usr/bin/
 
 ENTRYPOINT ["/usr/bin/cowsay"]
-CMD ["Kowflux?"]
+CMD ["Kowflux...?"]
