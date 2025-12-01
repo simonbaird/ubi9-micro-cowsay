@@ -1,6 +1,7 @@
 
 # Build stage
-FROM docker.io/redhat/ubi9:latest@sha256:dec374e05cc13ebbc0975c9f521f3db6942d27f8ccdf06b180160490eef8bdbc AS builder
+# https://hub.docker.com/r/redhat/ubi9
+FROM docker.io/redhat/ubi9:latest@sha256:3816d303e75dec4da2d10eeb9e8651eef4393721598bea4690c607282635aa57 AS builder
 
 WORKDIR /cowsay
 ARG COW_VER=2.0.4
@@ -21,7 +22,8 @@ cowsay "${*:-Kowflux..?}" | lolcat -f -h 0.8 -v 1
 EOT
 
 # Final image
-FROM docker.io/redhat/ubi9-micro:latest@sha256:aff810919642215e15c993b9bbc110dbcc446608730ad24499dafd9df7a8f8f4
+# https://hub.docker.com/r/redhat/ubi9-micro
+FROM docker.io/redhat/ubi9-micro:latest@sha256:e9765516d74cafded50d8ef593331eeca2ef6eababdda118e5297898d99b7433
 COPY --from=builder /cowsay/cowsay /cowsay/cowthink /lolcat/lolcat /lolcow/lolcow /usr/bin/
 
 ENTRYPOINT ["/usr/bin/lolcow"]
