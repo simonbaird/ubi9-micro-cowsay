@@ -18,7 +18,7 @@ RUN dnf install -y git-core gcc && \
 WORKDIR /lolcow
 RUN cat <<'EOT' > lolcow && chmod 755 lolcow
 #!/bin/bash
-cowsay "${*:-Kowflux..?}" | lolcat -f -h 0.8 -v 1
+cowsay "${*:-Kowflux...?}" | lolcat -f -h 0.8 -v 1
 EOT
 
 # Final image
