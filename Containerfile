@@ -23,7 +23,7 @@ EOT
 
 # Final image
 # https://hub.docker.com/r/redhat/ubi9-micro
-FROM docker.io/redhat/ubi9-micro:latest@sha256:e9765516d74cafded50d8ef593331eeca2ef6eababdda118e5297898d99b7433
+FROM docker.io/redhat/ubi9-micro:latest@sha256:f332c99eb8f798a8486821c91937f10ad64ee83d7e739303be2df051040918f6
 COPY --from=builder /cowsay/cowsay /cowsay/cowthink /lolcat/lolcat /lolcow/lolcow /usr/bin/
 
 ENTRYPOINT ["/usr/bin/lolcow"]
