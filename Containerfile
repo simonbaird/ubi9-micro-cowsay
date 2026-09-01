@@ -1,7 +1,7 @@
 
 # Build stage
 # https://hub.docker.com/r/redhat/ubi9
-FROM docker.io/redhat/ubi9:latest@sha256:3816d303e75dec4da2d10eeb9e8651eef4393721598bea4690c607282635aa57 AS builder
+FROM docker.io/redhat/ubi9:latest@sha256:25a147defd01e19674714f55d17538c8dbe55d8c305fa157ecc3f9c8977b05b6 AS builder
 
 WORKDIR /cowsay
 ARG COW_VER=2.0.4
